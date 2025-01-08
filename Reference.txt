@@ -1,0 +1,44 @@
+# Dataset
+
+1. 행정 경계 
+    - link : https://www.bigdata-geo.kr/pbps/ 
+    - type : geoDataframe (shp)
+    - folder : legal
+
+2. 국토 통계 지도 
+    - link : https://map.ngii.go.kr/ms/map/NlipMap.do 
+    - type : geoDataframe (shp)
+    - folder : population
+
+3. 보행노인 교통사고 다발 지역
+    - link :https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15057666
+    - type : url
+    - folder : oldman
+
+4. 전국 CCTV 현황 
+    - link : https://www.localdata.go.kr/lif/lifeCtacDataView.do?opnEtcSvcId=12_04_08_E
+    - type : excel file
+    - folder : cctv
+    
+
+5. 토지 이용 현황도
+    - link : https://www.data.go.kr/data/3049890/fileData.do?recommendDataYn=Y#
+    - type : shp 
+
+
+6. 병원 수
+    - link : https://www.data.go.kr/data/3081362/fileData.do
+    - type : csv
+
+7. 보건소 수 
+    - link : https://www.data.go.kr/data/3081361/fileData.do
+    - type : csv 
+
+    
+
+# 활용 목록록
+Blog : https://yganalyst.github.io/
+EPSG 5179 지도 : https://epsg.io/map#srs=5179
+GeoCoding : https://www.gislab.co.kr:444/wordpress/geocoding-download/
+
+
