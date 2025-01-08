@@ -8,8 +8,8 @@
 4. 모델로 예측한 CCTV 최적지와 실제 사고 위치를 시각화
 
 - 실제 격자 수에 비해 사고자가 있는 격자가 매우 적은 데이터 불균형 현상을 해소할 필요가 있음.
-- 데이터의 결측값 (인구 수에 많이 발생)을 해결
-- 이미 존재하는 CCTV와 감지 범위가 겹치는 것을 피하기 위해 CCTV 감지 범위를 다르게 설정해서 최적화
+- 데이터들의 결측값(인구 수에 많이 발생)을 해결해야 함.
+- 기존 CCTV 감지 범위를 고려해야 함
 
 ---
 
@@ -84,11 +84,12 @@ opt : 기존 CCTV 감지 범위를 반경 30m,70m,100m로 설정한 후 최적�
 
 ### File
 
-1. preprocess.py : 데이터 전처리 (결측값 제거 및 각종 전처리)
-2. merge.py : 전처리된 각 데이터들을 통합해 train 데이터셋 생성
-3. train.py : XGBoost Model training
-4. opt_cctv.py : CCTV 최적지 도출
-5. visualize.py : 필요한 부분 시각화 코드
+1. oldman_data.py : 년도별 사고자 수 데이터 요청 (url)
+2. preprocess.py : 데이터 전처리 (결측값 제거 및 각종 전처리)
+3. merge.py : 전처리된 각 데이터들을 통합해 train 데이터셋 생성
+4. train.py : XGBoost Model training
+5. opt_cctv.py : CCTV 최적지 도출
+6. visualize.py : 필요한 부분 시각화 코드
 
 
 ### Train
@@ -97,7 +98,7 @@ python train.py
 ```
 
 ### Reference
-- Referen.txt
+- Reference.txt
 
 
 
