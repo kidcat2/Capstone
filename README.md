@@ -29,10 +29,15 @@ conda install openpyxl
 ### Folder
 
 raw_data : 수집한 데이터
+
 dataframes : raw_data --> 전처리 --> shp
+
 train : XGBoost 모델 훈련을 위한 최종 데이터셋
+
 result : 예측한 cctv 최적지 Geodataframe
+
 opt : 기존 CCTV 감지 범위를 반경 30m,70m,100m로 설정한 후 최적지 도출 결과
+
 
 ```
 ┬─ result
